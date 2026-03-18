@@ -61,4 +61,4 @@ Next, configure the target_host to your server in hdt/config.yaml and upload the
 Lastly, set the SKIP_CPEE constant to True in hdt/parameters.py. 
 Run the RUST ONNX web service also on your CPEE server. 
 Copy the forecast_input_exp.php data service to the /var/www/ of your CPEE server.
-By executing preprocess_train_predict.sh, HyProTwin is automatically executed on your CPEE server. 
+By executing the step as described in evaluating, HyProTwin is automatically executed on your CPEE server. 
