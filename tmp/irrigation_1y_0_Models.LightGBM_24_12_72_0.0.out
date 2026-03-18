@@ -1,0 +1,3989 @@
+Running with eyJleHAiOiAiaXJyaWdhdGlvbl8xeSIsICJtb2RlbF90eXBlIjogIkxpZ2h0R0JNIiwgInN0X2x0IjogInNob3J0LXRlcm0iLCAic2Vuc29yX3ByZWZpeCI6ICJzZW5zb3JfIiwgIm1vZGVfcHJlZml4IjogIm1vZGVfIiwgImRpZmZfcHJlZml4IjogInRfc2luY2Vfb2JzIiwgIm1vZGVfY29tcG9uZW50IjogWyJtb2RlX2lycmlnYXRlIl19 eyJjb21wb25lbnQiOiAiYWxsIiwgImZvbGQiOiAwLCAiYnVuZGxlX2ZpbGUiOiAiL2hvbWUvamFuaWsvR2l0L2lvdHByZWRpY3Rpb24vZGF0YS9pcnJpZ2F0aW9uXzF5L2ZvbGQwLnBrbCIsICJwcmVkaWN0aW9uX2hvcml6b24iOiAyNCwgInByZWRpY3Rpb25fc3RyaWRlIjogMTIsICJpbnB1dF9zaXplIjogNzIsICJncyI6IGZhbHNlLCAic2ltIjogdHJ1ZSwgInRyYWluX2JvdW5kYXJpZXMiOiB0cnVlLCAibG93ZXJfdmFscyI6IFswLjE4LCAwLjE5LCAwLjE5OTk5OTk5OTk5OTk5OTk4LCAwLjIxLCAwLjIyLCAwLjIyOTk5OTk5OTk5OTk5OTk4LCAwLjI0XSwgInVwcGVyX3ZhbHMiOiBbMC4zNywgMC4zOCwgMC4zOSwgMC40LCAwLjQxLCAwLjQyLCAwLjQzXSwgImxvd2VyIjogbnVsbCwgInVwcGVyIjogbnVsbCwgImFjdHVhbF9ib3VuZGFyaWVzIjogWzAuMjEsIDAuNF0sICJzZWdtZW50YXRpb24iOiAib2ZmIiwgIm11bHRpIjogZmFsc2V9 eyJzY2FsZV9taW4iOiBbMC4xODEzODg3NTA2NzIzNDA0XSwgInNjYWxlX21heCI6IFsyMDk2NS4wNTA3ODEyNV19
+Loaded latest intermediate JSON from 2026-02-23 11:12:05.355532
+Starting gridsearch for simulated control modes...
+Total coarse configurations to evaluate: 49
+Lower bounds: [0.18, 0.19, 0.19999999999999998, 0.21, 0.22, 0.22999999999999998, 0.24]
+Upper bounds: [0.37, 0.38, 0.39, 0.4, 0.41, 0.42, 0.43]
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001395 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001314 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001250 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18362
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 73
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002141 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001320 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001458 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001572 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18362
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 73
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002555 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001369 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001346 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001589 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18362
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 73
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002593 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001337 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001276 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001294 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18362
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 73
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001926 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001401 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18360
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 72
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.18_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.18 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001633 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18362
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 73
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6985.934429810981 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07473152967686168 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05905205068119658 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002686 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7095.257723914541 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.0745097319734284 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.058254549625325704 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002621 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7095.257723914541 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.0745097319734284 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.058254549625325704 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002229 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4802.1304307421215 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07302623883813923 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.057729308499412574 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002332 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7123.713115833132 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07408439491418196 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05858811545282891 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002258 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5535.025470622291 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07372703352546163 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05811486270915264 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002510 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5877.079781159192 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07272019920802335 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05765452061799782 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002654 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7123.713115833132 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07408439491418196 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05858811545282891 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002634 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5766.165482838922 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07800549708460151 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.06131320173634865 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002579 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5877.079781159192 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07272019920802335 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05765452061799782 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002712 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7123.713115833132 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07408439491418196 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05858811545282891 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002682 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4802.1304307421215 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07302623883813923 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.057729308499412574 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000939 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5842.247947279297 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07083430321140086 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.056647066369953966 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001969 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6663.228558646528 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07371541407269086 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.058833322582312525 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002060 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.19999999999999998_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.19999999999999998 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4802.1304307421215 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07302623883813923 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.057729308499412574 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002600 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.21_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.21 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5758.421473583417 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07385568361324123 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05967674948585533 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002568 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6663.228558646528 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07371541407269086 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.058833322582312525 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002677 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4410.644215039479 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07055658269084847 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.055248836438377066 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002256 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6256.016252200616 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07450617937813715 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05899077126728132 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002317 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4816.449786536562 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07179327713200666 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05689479064909652 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002321 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Current prediction at 0.22 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5854.395058503954 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07416364829065078 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05874207513515867 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002561 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6256.016252200616 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07450617937813715 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05899077126728132 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002634 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4816.449786536562 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07179327713200666 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05689479064909652 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002645 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Current prediction at 0.22 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 7295.4500650095 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07593120193085877 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05963301110563102 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002586 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 3773.000818151122 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07284008207464929 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.057574213370905014 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002606 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.37_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.37
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6515.137170485067 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07257538224592233 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.0579270392726097 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002673 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.42_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Current prediction at 0.22 0.42
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5854.395058503954 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07416364829065078 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05874207513515867 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.001002 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.4_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.4
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6490.695866590353 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07209122803451203 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05710602965269794 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002004 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.38_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.38
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6515.137170485067 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07257538224592233 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.0579270392726097 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.001998 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.43_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Current prediction at 0.22 0.43
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 5854.395058503954 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07416364829065078 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05874207513515867 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002667 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.22999999999999998_u0.41_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.22999999999999998 0.41
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 4816.449786536562 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07179327713200666 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05689479064909652 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.002630 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 18504
+[LightGBM] [Info] Number of data points in the train set: 6060, number of used features: 144
+[LightGBM] [Info] Start training from score 0.068656
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l0.24_u0.39_irrigation_1y_0_Models.LightGBM_24_12_72_False.pkl
+Current prediction at 0.24 0.39
+Chunk 0/71 finished
+Chunk 1/71 finished
+Chunk 2/71 finished
+Chunk 3/71 finished
+Chunk 4/71 finished
+Chunk 5/71 finished
+Chunk 6/71 finished
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6230.751706393439 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07328876587093701 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.059240062141404266 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6569.563666917228 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07645120861470411 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.060582071485544044 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+
+Chunk 7/71 finished
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6018.71629112211 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07369555884689145 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05871010799355912 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6018.71629112211 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07369555884689145 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05871010799355912 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+
+Chunk 8/71 finished
+Chunk 9/71 finished
+Chunk 10/71 finished
+Chunk 11/71 finished
+Chunk 12/71 finished
+Chunk 13/71 finished
+Chunk 14/71 finished
+Chunk 15/71 finished
+Chunk 16/71 finished
+Chunk 17/71 finished
+Chunk 18/71 finished
+Chunk 19/71 finished
+Chunk 20/71 finished
+Chunk 21/71 finished
+Chunk 22/71 finished
+Chunk 23/71 finished
+Chunk 24/71 finished
+Chunk 25/71 finished
+Chunk 26/71 finished
+Chunk 27/71 finished
+Chunk 28/71 finished
+Chunk 29/71 finished
+Chunk 30/71 finished
+Chunk 31/71 finished
+Chunk 32/71 finished
+Chunk 33/71 finished
+Chunk 34/71 finished
+Chunk 35/71 finished
+Chunk 36/71 finished
+Chunk 37/71 finished
+Chunk 38/71 finished
+Chunk 39/71 finished
+Chunk 40/71 finished
+Chunk 41/71 finished
+Chunk 42/71 finished
+Chunk 43/71 finished
+Chunk 44/71 finished
+Chunk 45/71 finished
+Chunk 46/71 finished
+Chunk 47/71 finished
+Chunk 48/71 finished
+Chunk 49/71 finished
+Chunk 50/71 finished
+Chunk 51/71 finished
+Chunk 52/71 finished
+Chunk 53/71 finished
+Chunk 54/71 finished
+Chunk 55/71 finished
+Chunk 56/71 finished
+Chunk 57/71 finished
+Chunk 58/71 finished
+Chunk 59/71 finished
+Chunk 60/71 finished
+Chunk 61/71 finished
+Chunk 62/71 finished
+Chunk 63/71 finished
+Chunk 64/71 finished
+Chunk 65/71 finished
+Chunk 66/71 finished
+Chunk 67/71 finished
+Chunk 68/71 finished
+Chunk 69/71 finished
+Chunk 70/71 finished
+The average WAPE is 6018.71629112211 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average RMSE is 0.07369555884689145 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+The average MAE is 0.05871010799355912 for Experiment: irrigation_1y, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 24, input_size: 72, stride: 12
+Gridsearch progress: 10/49 | Best so far: 0.0747
+Gridsearch progress: 20/49 | Best so far: 0.0730
+Gridsearch progress: 30/49 | Best so far: 0.0708
+Gridsearch progress: 40/49 | Best so far: 0.0706
+Gridsearch progress: 49/49 | Best so far: 0.0706
+Start: 2026-02-24 16:28:56.882816
+End: 2026-02-24 16:29:24.477931
+Runtime: 0:00:27.595115
+Best upper lower
+Lower bound: 0.22
+Upper bound: 0.39
+Validation RMSE: 0.07055658269084847

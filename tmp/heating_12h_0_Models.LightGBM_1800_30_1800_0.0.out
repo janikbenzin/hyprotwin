@@ -1,0 +1,3307 @@
+Running with eyJleHAiOiAiaGVhdGluZ18xMmgiLCAibW9kZWxfdHlwZSI6ICJMaWdodEdCTSIsICJzdF9sdCI6ICJzaG9ydC10ZXJtIiwgInNlbnNvcl9wcmVmaXgiOiAic2Vuc29yXyIsICJtb2RlX3ByZWZpeCI6ICJtb2RlXyIsICJkaWZmX3ByZWZpeCI6ICJ0X3NpbmNlX29icyIsICJtb2RlX2NvbXBvbmVudCI6IFsibW9kZV9oZWF0Il19 eyJjb21wb25lbnQiOiAiYWxsIiwgImZvbGQiOiAwLCAiYnVuZGxlX2ZpbGUiOiAiL2hvbWUvamFuaWsvR2l0L2lvdHByZWRpY3Rpb24vZGF0YS9oZWF0aW5nXzEyaC9mb2xkMC5wa2wiLCAicHJlZGljdGlvbl9ob3Jpem9uIjogMTgwMCwgInByZWRpY3Rpb25fc3RyaWRlIjogMzAsICJpbnB1dF9zaXplIjogMTgwMCwgImdzIjogZmFsc2UsICJzaW0iOiB0cnVlLCAidHJhaW5fYm91bmRhcmllcyI6IHRydWUsICJsb3dlcl92YWxzIjogWzc2LCA3NywgNzgsIDc5LCA4MCwgODEsIDgyXSwgInVwcGVyX3ZhbHMiOiBbOTYsIDk3LCA5OCwgOTksIDEwMF0sICJsb3dlciI6IG51bGwsICJ1cHBlciI6IG51bGwsICJhY3R1YWxfYm91bmRhcmllcyI6IFs4MCwgMTAwXSwgInNlZ21lbnRhdGlvbiI6ICJvZmYiLCAibXVsdGkiOiBmYWxzZX0= eyJzY2FsZV9taW4iOiBbNzUuODYwODc3OTkwNzIyNjZdLCAic2NhbGVfbWF4IjogWzEwMC4wXX0=
+Loaded latest intermediate JSON from 2026-02-20 22:17:12.488786
+Starting gridsearch for simulated control modes...
+Total coarse configurations to evaluate: 35
+Lower bounds: [76, 77, 78, 79, 80, 81, 82]
+Upper bounds: [96, 97, 98, 99, 100]
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.979454 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l76_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 76 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 46.03392823456767 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3163307080824183 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.25645443143365515 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.302791 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l78_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 78 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.9413570714162 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.281848810502368 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.22809003429522604 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.875458 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l79_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 79 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 55.49233809094091 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.993850 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l76_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 76 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 43.81552466439456 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.301605996989136 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.24408342295075555 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.747755 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l77_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 77 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 43.60521230055404 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.29997741570630415 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.24293160664965938 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.856416 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l79_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 79 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 49.44311060180627 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.886610 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l76_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 76 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 47.984401929010126 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3281929659006827 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2673410239648207 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.009706 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l78_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 78 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.19382586681999 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.27783681003183613 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.22387550700550288 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.256133 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l79_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 79 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 47.09753678291489 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.934637 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l76_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 76 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 47.37489698999399 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3255570203274663 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.26398796055217444 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.326888 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l78_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 78 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.342101078094274 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.27626833056150124 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.22471685406498945 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.709795 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l80_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 80 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 54.9265513646892 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.981478 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l77_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 77 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.99472273820421 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.2828182294038628 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.22838624420341727 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.550888 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l78_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 78 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 42.40344559488771 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.29026634834308784 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.23619895813868935 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.940095 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l80_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 80 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 46.99333723520336 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.816162 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l76_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 76 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 47.56884635149704 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.32693029123549955 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.26506825927391114 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.183929 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l77_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 77 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 47.287353371926706 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.32199517654644233 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2634957353022867 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.241082 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l79_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 79 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.13217873787668 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.210473 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l77_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 77 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.94784048940879 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.2829617142102793 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2280743263802844 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.261640 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l79_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 79 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 42.35720583513182 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.2914589750114553 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.23592997750776734 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.981386 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l80_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 80 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 48.85104880168026 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.902757 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l77_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 77 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 42.206242949047734 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.2922838599983971 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.23504241460531322 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.451151 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l78_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 78 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 42.94503762752937 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.2942219846026726 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2392197921206811 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 2.033203 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l80_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 80 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 52.752744476907765 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.32308945701986175 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2618628472083456 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.846918 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l81_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 81 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 49.32324588691987 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.33602210580666847 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.27490596925989585 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.2808004847968358 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2235237380614679 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.573474 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l81_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 81 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 50.77021325548933 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3450826733019288 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.282869492617912 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.35979135229124476 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2940676073278935 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 2.207479 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l82_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 82 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 51.501749931488746 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.35002038210323316 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.28701381623349714 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.33665610418307873 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.27229974558765696 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.748288 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l82_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 82 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 44.57893367885798 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3066374901312526 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.24839577473277785 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.3766880669184143 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.30603672737355986 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.506186 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l81_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 81 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 43.99032922663943 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.30292246644279164 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2451419379889804 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.3219572475318394 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2624209341323152 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.348921 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l81_u97_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 81 97
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 48.44630371240631 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3322444885464271 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2699935809705167 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.183509 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l82_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 82 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 51.508324250633635 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.35062019287860335 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.28699098806912376 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.33771577224319504 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.27553660347563314 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 1.056556 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l81_u96_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 81 96
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 40.511129086611945 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.28072924725124626 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2256866725805687 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.990223 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l82_u99_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 82 99
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 46.031033597120974 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3170307919972536 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.25649563446610013 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+
+The average RMSE is 0.374492151744185 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.3093088834458435 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.983695 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l80_u100_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 80 100
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 45.57509773227081 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.30347343206896465 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.2539340166254719 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.921265 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 462600
+[LightGBM] [Info] Number of data points in the train set: 28439, number of used features: 3600
+[LightGBM] [Info] Start training from score 0.554327
+Trained and saved prediction model to ./models_tmp/LightGBM_gridsearch_training_l82_u98_heating_12h_0_Models.LightGBM_1800_30_1800_False.pkl
+Current prediction at 82 98
+Chunk 0/84 finished
+Chunk 1/84 finished
+Chunk 2/84 finished
+Chunk 3/84 finished
+Chunk 4/84 finished
+Chunk 5/84 finished
+Chunk 6/84 finished
+Chunk 7/84 finished
+Chunk 8/84 finished
+Chunk 9/84 finished
+Chunk 10/84 finished
+Chunk 11/84 finished
+Chunk 12/84 finished
+Chunk 13/84 finished
+Chunk 14/84 finished
+Chunk 15/84 finished
+Chunk 16/84 finished
+Chunk 17/84 finished
+Chunk 18/84 finished
+Chunk 19/84 finished
+Chunk 20/84 finished
+Chunk 21/84 finished
+Chunk 22/84 finished
+Chunk 23/84 finished
+Chunk 24/84 finished
+Chunk 25/84 finished
+Chunk 26/84 finished
+Chunk 27/84 finished
+Chunk 28/84 finished
+Chunk 29/84 finished
+Chunk 30/84 finished
+Chunk 31/84 finished
+Chunk 32/84 finished
+Chunk 33/84 finished
+Chunk 34/84 finished
+Chunk 35/84 finished
+Chunk 36/84 finished
+Chunk 37/84 finished
+Chunk 38/84 finished
+Chunk 39/84 finished
+Chunk 40/84 finished
+Chunk 41/84 finished
+Chunk 42/84 finished
+Chunk 43/84 finished
+Chunk 44/84 finished
+Chunk 45/84 finished
+Chunk 46/84 finished
+Chunk 47/84 finished
+Chunk 48/84 finished
+Chunk 49/84 finished
+Chunk 50/84 finished
+Chunk 51/84 finished
+Chunk 52/84 finished
+Chunk 53/84 finished
+Chunk 54/84 finished
+Chunk 55/84 finished
+Chunk 56/84 finished
+Chunk 57/84 finished
+Chunk 58/84 finished
+Chunk 59/84 finished
+Chunk 60/84 finished
+Chunk 61/84 finished
+Chunk 62/84 finished
+Chunk 63/84 finished
+Chunk 64/84 finished
+Chunk 65/84 finished
+Chunk 66/84 finished
+Chunk 67/84 finished
+Chunk 68/84 finished
+Chunk 69/84 finished
+Chunk 70/84 finished
+Chunk 71/84 finished
+Chunk 72/84 finished
+Chunk 73/84 finished
+Chunk 74/84 finished
+Chunk 75/84 finished
+Chunk 76/84 finished
+Chunk 77/84 finished
+Chunk 78/84 finished
+Chunk 79/84 finished
+Chunk 80/84 finished
+Chunk 81/84 finished
+Chunk 82/84 finished
+Chunk 83/84 finished
+The average WAPE is 44.64355975018871 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average RMSE is 0.3079512651759001 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+The average MAE is 0.24874081394625303 for Experiment: heating_12h, model: Models.LightGBM, horizon: short-term, component: Components.ALL, segment: off, prediction horizon: 1800, input_size: 1800, stride: 30
+Gridsearch progress: 10/35 | Best so far: 0.2818
+Gridsearch progress: 20/35 | Best so far: 0.2763
+Gridsearch progress: 30/35 | Best so far: 0.2763
+Gridsearch progress: 35/35 | Best so far: 0.2763
+Start: 2026-02-21 02:11:01.005425
+End: 2026-02-21 03:12:09.432217
+Runtime: 1:01:08.426792
+Best upper lower
+Lower bound: 78
+Upper bound: 98
+Validation RMSE: 0.27626833056150124

@@ -1,0 +1,260 @@
+<testset xmlns="http://cpee.org/ns/properties/2.0">
+  <executionhandler>ruby</executionhandler>
+  <dataelements>
+    <url_base>https://cpee_server/cpee_models/</url_base>
+  </dataelements>
+  <endpoints>
+    <timeout>timeouttimeout.php</timeout>
+    <sub>https-post://cpee_server/flow/start/url/</sub>
+    <input>https://cpee_server/forecast_input.php</input>
+    <input_exp>https://cpee_server/forecast_input_exp.php</input_exp>
+  </endpoints>
+  <attributes>
+    <executionhandler>ruby</executionhandler>
+    <modeltype>CPEE</modeltype>
+    <theme>dataflow</theme>
+    <info>superprocess</info>
+  </attributes>
+  <description>
+    <description xmlns="http://cpee.org/ns/description/1.0">
+      <manipulate id="a3" label="Init variables">
+        <code>data.i = data.combined.length
+          data.prediction_endpoint = "https://cpee_server/prediction/"
+        </code>
+        <annotations>
+          <_logging_behavior>
+            <_exclude/>
+          </_logging_behavior>
+          <_context_data_analysis>
+            <probes/>
+          </_context_data_analysis>
+        </annotations>
+      </manipulate>
+      <loop mode="pre_test" condition="data.i &gt; 0">
+        <manipulate id="a4" label="Next run">
+          <code>data.current = data.combined[data.i - 1]
+data.cycle = data.cycles[data.i - 1]
+data.stride = data.current[0]
+data.horizon = data.current[1]
+data.input_size = data.current[2]
+data.lower = data.current[3]
+data.upper = data.current[4]
+if data.scenario_exp == data.exp
+   data.next_model = data.url_base + data.exp + ".xml"
+else
+   data.next_model = data.url_base + data.exp + "_scenario" + ".xml"
+end</code>
+          <annotations>
+            <_logging_behavior>
+              <_exclude/>
+            </_logging_behavior>
+            <_context_data_analysis>
+              <probes/>
+            </_context_data_analysis>
+          </annotations>
+        </manipulate>
+        <choose mode="exclusive" label="">
+          <alternative condition="data.i == 1">
+            <_probability>
+              <_probability_min/>
+              <_probability_max/>
+              <_probability_avg/>
+            </_probability>
+            <call id="a7" endpoint="sub">
+              <parameters>
+                <label>Run predictive simulation</label>
+                <color>#d4e1f1</color>
+                <arguments>
+                  <behavior>wait_running</behavior>
+                  <url>!data.next_model</url>
+                  <init>
+                    <prediction_horizon>!data.horizon</prediction_horizon>
+                    <stride>!data.stride</stride>
+                    <input_size>!data.input_size</input_size>
+                    <exp>!data.exp</exp>
+                    <model_type>!data.model_type</model_type>
+                    <component>!data.component</component>
+                    <cycles>!data.cycle</cycles>
+                    <i>0</i>
+                    <scale_mins>!data.scale_min</scale_mins>
+                    <scale_maxs>!data.scale_max</scale_maxs>
+                    <lower>!data.lower</lower>
+                    <upper>!data.upper</upper>
+                    <scenario_exp>!data.scenario_exp</scenario_exp>
+                    <sim>!data.sim</sim>
+                  </init>
+                  <endpoints>
+                    <prediction>!data.prediction_endpoint</prediction>
+                  </endpoints>
+                  <attributes>
+                    <executionhandler>eval</executionhandler>
+                    <remote>!data.remotesub</remote>
+                  </attributes>
+                  <customization/>
+                </arguments>
+              </parameters>
+              <code>
+                <signal/>
+                <prepare/>
+                <finalize output="result"/>
+                <update output="result"/>
+                <rescue output="result">data.result = result</rescue>
+              </code>
+              <annotations>
+                <_generic/>
+                <_logging_behavior>
+                  <_exclude/>
+                  <_include/>
+                </_logging_behavior>
+                <_timing>
+                  <_timing_weight/>
+                  <_timing_avg/>
+                  <explanations/>
+                </_timing>
+                <_shifting>
+                  <_shifting_type>Duration</_shifting_type>
+                </_shifting>
+                <_context_data_analysis>
+                  <probes/>
+                  <ips/>
+                </_context_data_analysis>
+                <report>
+                  <url/>
+                </report>
+                <_notes>
+                  <_notes_general/>
+                </_notes>
+              </annotations>
+              <documentation>
+                <input/>
+                <output/>
+                <implementation>
+                  <description/>
+                </implementation>
+                <code>
+                  <description/>
+                </code>
+              </documentation>
+            </call>
+          </alternative>
+          <otherwise>
+            <call id="a5" endpoint="sub">
+              <parameters>
+                <label>Run predictive simulation</label>
+                <color>#d4e1f1</color>
+                <arguments>
+                  <behavior>fork_running</behavior>
+                  <url>!data.next_model</url>
+                  <init>
+                    <prediction_horizon>!data.horizon</prediction_horizon>
+                    <stride>!data.stride</stride>
+                    <input_size>!data.input_size</input_size>
+                    <exp>!data.exp</exp>
+                    <model_type>!data.model_type</model_type>
+                    <component>!data.component</component>
+                    <cycles>!data.cycle</cycles>
+                    <i>0</i>
+                    <scale_mins>!data.scale_min</scale_mins>
+                    <scale_maxs>!data.scale_max</scale_maxs>
+                    <lower>!data.lower</lower>
+                    <upper>!data.upper</upper>
+                    <scenario_exp>!data.scenario_exp</scenario_exp>
+                    <sim>!data.sim</sim>
+                  </init>
+                  <endpoints>
+                    <prediction>!data.prediction_endpoint</prediction>
+                  </endpoints>
+                  <attributes>
+                    <executionhandler>eval</executionhandler>
+                    <remote>!data.remotesub</remote>
+                  </attributes>
+                  <customization/>
+                </arguments>
+              </parameters>
+              <code>
+                <signal/>
+                <prepare/>
+                <finalize output="result"/>
+                <update output="result"/>
+                <rescue output="result">data.result = result</rescue>
+              </code>
+              <annotations>
+                <_generic/>
+                <_logging_behavior>
+                  <_exclude/>
+                  <_include/>
+                </_logging_behavior>
+                <_timing>
+                  <_timing_weight/>
+                  <_timing_avg/>
+                  <explanations/>
+                </_timing>
+                <_shifting>
+                  <_shifting_type>Duration</_shifting_type>
+                </_shifting>
+                <_context_data_analysis>
+                  <probes/>
+                  <ips/>
+                </_context_data_analysis>
+                <report>
+                  <url/>
+                </report>
+                <_notes>
+                  <_notes_general/>
+                </_notes>
+              </annotations>
+              <documentation>
+                <input/>
+                <output/>
+                <implementation>
+                  <description/>
+                </implementation>
+                <code>
+                  <description/>
+                </code>
+              </documentation>
+            </call>
+          </otherwise>
+        </choose>
+        <manipulate id="a6" label="Iterate">
+          <code>data.i -= 1</code>
+          <annotations>
+            <_logging_behavior>
+              <_exclude/>
+            </_logging_behavior>
+            <_context_data_analysis>
+              <probes/>
+            </_context_data_analysis>
+          </annotations>
+        </manipulate>
+        <_probability>
+          <_probability_min/>
+          <_probability_max/>
+          <_probability_avg/>
+        </_probability>
+        <_annotations>
+          <_logging_behavior>
+            <_iteration/>
+          </_logging_behavior>
+        </_annotations>
+      </loop>
+      <loop mode="pre_test" condition="">
+        <_probability>
+          <_probability_min/>
+          <_probability_max/>
+          <_probability_avg/>
+        </_probability>
+        <_annotations>
+          <_logging_behavior>
+            <_iteration/>
+          </_logging_behavior>
+        </_annotations>
+      </loop>
+    </description>
+  </description>
+  <transformation>
+    <description type="copy"/>
+    <dataelements type="none"/>
+    <endpoints type="none"/>
+  </transformation>
+</testset>

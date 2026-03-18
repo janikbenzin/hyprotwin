@@ -1,0 +1,374 @@
+<testset xmlns="http://cpee.org/ns/properties/2.0">
+  <executionhandler>eval</executionhandler>
+  <dataelements>
+    <sr>1</sr>
+    <f>1</f>
+    <actuator_names>["actuators/irrigate"]</actuator_names>
+    <prediction_endpoint>http://localhost:3000/</prediction_endpoint>
+    <flag>false</flag>
+    <url_base>https://cpee_server/pred_models/</url_base>
+    <sensors>1</sensors>
+    <actuators>1</actuators>
+    <i>0</i>
+    <sensor_names>["sensors/moisture"]</sensor_names>
+    <component>all</component>
+    <exp>irrigation_1y</exp>
+    <scenario_start>168</scenario_start>
+    <scenario_exp>irrigation_1y_scenario</scenario_exp>
+    <scenario_lower>0.25</scenario_lower>
+    <scenario_upper>0.35</scenario_upper>
+  </dataelements>
+  <endpoints>
+    <timeout>https-post://cpee.org/services/timeout.php</timeout>
+    <sub>https-post://cpee_server/flow/start/url/</sub>
+    <user>https-post://cpee.org/services/timeout-user.php</user>
+    <auto>https-post://cpee.org/services/timeout-auto.php</auto>
+    <input_exp>https://cpee_server/forecast_input_exp.php</input_exp>
+    <subprocess>https-post://cpee.org/flow/start/url/</subprocess>
+    <send>https-post://cpee.org/ing/correlators/message/send/</send>
+    <receive>https-get://cpee.org/ing/correlators/message/receive/</receive>
+    <input>https://cpee_server/forecast_input_exp.php</input>
+    <prediction>http://localhost:3000/</prediction>
+  </endpoints>
+  <attributes>
+    <executionhandler>eval</executionhandler>
+    <guarded>none</guarded>
+    <guarded_id/>
+    <modeltype>CPEE</modeltype>
+    <theme>dataflow</theme>
+    <creator>Christine Ashcreek</creator>
+    <author>Christine Ashcreek</author>
+    <info>irrigation_1y_scenario</info>
+    <model_uuid>de596741-f2d0-4199-a664-190f60f23e2e</model_uuid>
+    <model_version/>
+    <design_stage>development</design_stage>
+    <nednoamol>true</nednoamol>
+    <design_dir>Experiments.dir/Digital Twin Container.dir/Heating.dir/</design_dir>
+    <parent_instance>183</parent_instance>
+    <parent_instance_uuid>5ad231aa-1087-4fe5-be1b-570750c4de95</parent_instance_uuid>
+    <parent_instance_model>superprocess</parent_instance_model>
+    <parent_instance_task_id>a5</parent_instance_task_id>
+    <parent_instance_task_label>Run predictive simulation</parent_instance_task_label>
+  </attributes>
+  <description>
+    <description xmlns="http://cpee.org/ns/description/1.0">
+      <manipulate id="a3" label="Initialize global parameters">
+        <code>model_parts = [data.model_type, data.exp,data.component, data.prediction_horizon, data.input_size ]  
+model_filename = model_parts.join("_")    
+sim_suffix = data.sim.to_s.include?("true") ? "_sim" : ""    
+data.model = "#{data.url_base}#{data.model_type}_#{data.exp}/#{model_filename}#{sim_suffix}.onnx"
+
+data.scale_min = data.scale_mins[0]
+data.scale_max = data.scale_maxs[0]
+data.start = Time.now.to_f
+
+# data.shape = [1, data.input_size * (data.sensors + data.actuators)]</code>
+        <annotations>
+          <_logging_behavior>
+            <_exclude/>
+          </_logging_behavior>
+          <_context_data_analysis>
+            <probes/>
+          </_context_data_analysis>
+        </annotations>
+      </manipulate>
+      <loop mode="post_test" condition="data.cycles &gt; 0">
+        <_probability>
+          <_probability_min/>
+          <_probability_max/>
+          <_probability_avg/>
+        </_probability>
+        <_annotations>
+          <_logging_behavior>
+            <_iteration/>
+          </_logging_behavior>
+        </_annotations>
+        <call id="a7" endpoint="input">
+          <parameters>
+            <label>Initialize input data service and prediction model</label>
+            <color/>
+            <method>:get</method>
+            <arguments>
+              <exp>!data.scenario_exp</exp>
+              <model_type>!data.model_type</model_type>
+              <l0>!data.prediction_horizon</l0>
+              <l1>!data.stride</l1>
+              <l2>!data.input_size</l2>
+              <l3>!data.i</l3>
+              <l4>mode_</l4>
+            </arguments>
+          </parameters>
+          <code>
+            <signal/>
+            <prepare/>
+            <finalize output="result">data.control_modes = result
+data.input_resource = "#{endpoints.input}?exp=#{data.scenario_exp}&amp;model_type=#{data.model_type}&amp;l0=#{data.prediction_horizon}&amp;l1=#{data.stride}&amp;l2=#{data.input_size}&amp;l3=#{data.i}"</finalize>
+            <update output="result"/>
+            <rescue output="result"/>
+          </code>
+          <annotations>
+            <_generic/>
+            <_logging_behavior>
+              <_exclude/>
+              <_include/>
+            </_logging_behavior>
+            <_timing>
+              <_timing_weight/>
+              <_timing_avg/>
+              <explanations/>
+            </_timing>
+            <_shifting>
+              <_shifting_type>Duration</_shifting_type>
+            </_shifting>
+            <_context_data_analysis>
+              <probes/>
+              <ips/>
+            </_context_data_analysis>
+            <report>
+              <url/>
+            </report>
+            <_notes>
+              <_notes_general/>
+            </_notes>
+          </annotations>
+          <documentation>
+            <input/>
+            <output/>
+            <implementation>
+              <description/>
+            </implementation>
+            <code>
+              <description/>
+            </code>
+          </documentation>
+        </call>
+        <manipulate id="a9" label="Initialize simulation time">
+          <code>data.simulation_time = 0
+data.cycle_start = Time.now.to_f</code>
+          <annotations>
+            <_logging_behavior>
+              <_exclude/>
+            </_logging_behavior>
+            <_context_data_analysis>
+              <probes/>
+            </_context_data_analysis>
+          </annotations>
+        </manipulate>
+        <call id="a4" endpoint="prediction">
+          <parameters>
+            <label>Read (Initialize prediction service and predict)</label>
+            <color>#ffffff</color>
+            <method>:post</method>
+            <arguments>
+              <init>true</init>
+              <model_url>!data.model</model_url>
+              <sensors>!data.sensors</sensors>
+              <covariates>!data.actuators</covariates>
+              <input_size>!data.input_size</input_size>
+              <input_resource>!data.input_resource</input_resource>
+            </arguments>
+          </parameters>
+          <code>
+            <signal/>
+            <prepare/>
+            <finalize output="result">data.result = JSON.parse(result)
+data.moisture = data.result[0]
+data.simulation_time = data.simulation_time + data.f * data.sr</finalize>
+            <update output="result"/>
+            <rescue output="result"/>
+          </code>
+          <annotations>
+            <_generic/>
+            <_logging_behavior>
+              <_exclude/>
+              <_include/>
+            </_logging_behavior>
+            <_timing>
+              <_timing_weight/>
+              <_timing_avg/>
+              <explanations/>
+            </_timing>
+            <_shifting>
+              <_shifting_type>Duration</_shifting_type>
+            </_shifting>
+            <_context_data_analysis>
+              <probes/>
+              <ips/>
+            </_context_data_analysis>
+            <report>
+              <url/>
+            </report>
+            <_notes>
+              <_notes_general/>
+            </_notes>
+          </annotations>
+          <documentation>
+            <input/>
+            <output/>
+            <implementation>
+              <description/>
+            </implementation>
+            <code>
+              <description/>
+            </code>
+          </documentation>
+        </call>
+        <loop mode="post_test" condition="data.simulation_time.to_f &lt; data.prediction_horizon.to_i">
+          <_probability>
+            <_probability_min/>
+            <_probability_max/>
+            <_probability_avg/>
+          </_probability>
+          <_annotations>
+            <_logging_behavior>
+              <_iteration/>
+            </_logging_behavior>
+          </_annotations>
+          <choose mode="exclusive">
+            <alternative condition="data.moisture * (data.scale_max - data.scale_min) + data.scale_min &lt; data.lower">
+              <_probability>
+                <_probability_min/>
+                <_probability_max/>
+                <_probability_avg/>
+              </_probability>
+              <manipulate id="a8" label="On">
+                <code>data.state = {data.actuator_names[0] =&gt; true}
+
+data.control_modes = [1]</code>
+                <annotations>
+                  <_logging_behavior>
+                    <_exclude/>
+                  </_logging_behavior>
+                  <_context_data_analysis>
+                    <probes/>
+                  </_context_data_analysis>
+                </annotations>
+              </manipulate>
+            </alternative>
+            <alternative condition="data.moisture * (data.scale_max - data.scale_min) + data.scale_min  &gt;= data.upper">
+              <_probability>
+                <_probability_min/>
+                <_probability_max/>
+                <_probability_avg/>
+              </_probability>
+              <manipulate id="a2" label="Off">
+                <code>data.data = {data.actuator_names[0] =&gt; false}
+data.control_modes = [0]</code>
+                <annotations>
+                  <_logging_behavior>
+                    <_exclude/>
+                  </_logging_behavior>
+                  <_context_data_analysis>
+                    <probes/>
+                  </_context_data_analysis>
+                </annotations>
+              </manipulate>
+            </alternative>
+            <otherwise/>
+          </choose>
+          <call id="a1" endpoint="prediction">
+            <parameters>
+              <label>Read (Forecast Physical)</label>
+              <color/>
+              <method>:post</method>
+              <arguments>
+                <init>false</init>
+                <model_url>!data.model</model_url>
+                <sensors>!data.sensors</sensors>
+                <covariates>!data.actuators</covariates>
+                <input_size>!data.input_size</input_size>
+                <input>!data.control_modes</input>
+              </arguments>
+            </parameters>
+            <code>
+              <signal/>
+              <prepare/>
+              <finalize output="result">data.result = JSON.parse(result)
+data.moisture = data.result[0]
+data.simulation_time = data.simulation_time + data.f * data.sr
+if not data.flag and (data.simulation_time &gt; data.scenario_start)
+   data.tmp_lower = data.lower
+   data.tmp_upper = data.upper
+   data.lower = data.scenario_lower
+   data.upper = data.scenario_upper
+   data.flag = true
+end</finalize>
+              <update output="result"/>
+              <rescue output="result"/>
+            </code>
+            <annotations>
+              <_generic/>
+              <_logging_behavior>
+                <_exclude/>
+                <_include/>
+              </_logging_behavior>
+              <_timing>
+                <_timing_weight/>
+                <_timing_avg/>
+                <explanations/>
+              </_timing>
+              <_shifting>
+                <_shifting_type>Duration</_shifting_type>
+              </_shifting>
+              <_context_data_analysis>
+                <probes/>
+                <ips/>
+              </_context_data_analysis>
+              <report>
+                <url/>
+              </report>
+              <_notes>
+                <_notes_general/>
+              </_notes>
+            </annotations>
+            <documentation>
+              <input/>
+              <output/>
+              <implementation>
+                <description/>
+              </implementation>
+              <code>
+                <description/>
+              </code>
+            </documentation>
+          </call>
+        </loop>
+        <manipulate id="a5" label="Finish cycle">
+          <code>data.cycle_duration = Time.now.to_f - data.cycle_start
+data.i += 1
+data.cycles -= 1
+data.scenario_start -= data.stride
+if data.scenario_start &gt; 0 and data.flag
+   data.flag = false
+   data.lower = data.tmp_lower
+   data.upper = data.tmp_upper
+end</code>
+          <annotations>
+            <_logging_behavior>
+              <_exclude/>
+            </_logging_behavior>
+            <_context_data_analysis>
+              <probes/>
+            </_context_data_analysis>
+          </annotations>
+        </manipulate>
+      </loop>
+      <manipulate id="a11" label="Finish">
+        <code>data.overall_duration = Time.now.to_f - data.start</code>
+        <annotations>
+          <_logging_behavior>
+            <_exclude/>
+          </_logging_behavior>
+          <_context_data_analysis>
+            <probes/>
+          </_context_data_analysis>
+        </annotations>
+      </manipulate>
+    </description>
+  </description>
+  <transformation>
+    <description type="copy"/>
+    <dataelements type="none"/>
+    <endpoints type="none"/>
+  </transformation>
+</testset>
