@@ -210,8 +210,3 @@ __marimo__/
 
 
 .idea/
-!/data
-/data/*
-!/xes-yaml-pm4py-extension
-/xes-yaml-pm4py-extension/*
-hdt/config.yaml

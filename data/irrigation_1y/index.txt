@@ -1,0 +1,8 @@
+1x 1week (729e9b64-3ee2-49b6-afe8-234de67ff2e0) - 1473
+  Soil Moisture - Environment Temperature - Param (d55dc1b0-f4d5-4bea-b551-57cdc974b525) - 1484
+  Soil Moisture - Environment Humidity - Param (78483ad1-666b-42ac-9b43-43de93ca5cd8) - 1486
+  Soil Moisture - Environment Plant Transpiration - Param (57993e04-a869-4aef-8987-2de6203db1b6) - 1485
+  Soil Moisture - Control - Param (f17712b9-5822-42c9-819c-fea652612166) - 1487
+  Soil Moisture - Environment Hour - Param (65005963-a973-40c0-a9c7-cf2f88f08af2) - 1490
+  Soil Moisture - Environment Rain - Param (34a58c28-013c-4984-8eda-5b06c7e1a5eb) - 1488
+  Soil Moisture - Physical - Param (25fc03ce-6848-4230-b200-9adcfb5f1fb1) - 1489

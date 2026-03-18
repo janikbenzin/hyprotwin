@@ -1,0 +1,7 @@
+target_input_path: "/var/www/"
+target_user: "user"
+target_host: "cpee_server"
+target_start: "/flow/start/url/"
+target_cpee: "/cpee_models/"
+worker_urls:
+  - "dummy"
