@@ -15,6 +15,10 @@ Predictive Simulation of Continuous Processes".
 
 ## Quick evaluation
 
+**Prerequisites**: Python 3.13
+
+**Tested on**: Fedora 43
+
 ```shell
 chmod +x install.sh
 ./install.sh
@@ -30,9 +34,6 @@ Without GPU acceleration (e.g., GeForce RTX 4090), the evaluation likely takes m
 
 ### Installation
 
-**Prerequisites**: Python 3.13
-
-**Tested on**: Fedora 43
 
 ```shell
 chmod +x install.sh
