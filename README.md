@@ -52,8 +52,7 @@ python -m hdt.cpee_eval_pipeline
 ```
 
 **Remark on available files**:
-So far, we can provide all intermediate results json files and logs in tmp/. Due to the large size of all evaluation files that exceeds 85GB (including trained models, predicted DXES event logs), we cannot provide all remaining files and, at the same time, meet the double blind requirements.
-As soon as the double blind does not take effect anymore, we will provide all files in a suitable file storage for full transparency. 
+The data, all models, and intermediate files are available [online](https://tools.bpm.in.tum.de/iotprediction/store/)
 
 **Remark on HyProTwin**:
 For HyProTwin to fully function, you must install a CPEE server (download and install as described at www.cpee.org).
